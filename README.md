@@ -1,78 +1,95 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 企業の業態分析・投稿プラットフォーム「hoooters」を作成しました。
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## プロダクト概要
 
-## About Laravel
+エンジニア転職志望者向けの、企業業態分析記事投稿プラットフォームです。個人が気になる企業を分析し、ピクト図、企業概要、各種条件について記事を作成し、投稿することで、「hoooters」メンバーへ記事の共有が可能です。
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ページ構成は、welcome画面、ログイン画面、ホーム画面、記事作成画面、記事詳細画面、マイページ画面、マイページ編集画面の7ページとなっています。
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+4人のチームで、企画(3日間)→実装(7日間)まで約10日間程度で作成しました。私は主に、メンバー間の同一環境構築、ページ間のデータ受け渡し、コメント機能やお気に入り機能の実装など、細かい部分を担当しました。
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+【公開ページ】
+http://tealimpala23.sakura.ne.jp/hoooters/public/welcome
 
-## Laravel Sponsors
+Id = niwa@niwa.jp　,　pass = aaaaaaaaでご確認ください。
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+###### ①welcome画面
+![](pic1.png "pic1")
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+###### ②ログイン画面
+![](pic2.png "pic2")
 
-## Contributing
+###### ③ホーム画面
+![](pic3.png "pic3")
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+###### ④記事作成画面
+![](pic4.png "pic4")
 
-## Code of Conduct
+###### ⑤記事詳細画面
+![](pic7.png "pic7")
+![](pic8.png "pic8")
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+###### ⑥マイページ画面
+![](pic5.png "pic5")
 
-## Security Vulnerabilities
+###### ⑦マイページ編集画面
+![](pic6.png "pic6")
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 作成背景
+
+転職活動時、業界や企業分析に非常に時間が掛かります。そこで、同じコミニティー内のメンバーが、調べた企業の情報を記事にし、コミニティーメンバーに共有することで、業界/企業分析を効率化するできる様に作成しました。記事内でコメント機能をつけることにより、議論等も可能となっています。
+
+
+
+## 使用技術
+HTML、PHP、Laravel、node.js、MAMP、gitkraken
+
+
+
+## 工夫した点
+
+- メンバーの同一の環境構築
+
+    gitkrakenを使用して、メンバー全員が同一環境を構築できるようにしました。具体的には、MAMP上で、Laravel、node.jsをインストール、プロジェクトファイルや共通ファイル(migrationファイル等)を作成した上で、リモートリポジトリに、pushし、各メンバーがリモートリポジトリを、git pullすることで、同一環境を構築しました。同一環境構築後、各メンバーがブランチを作成し、ローカルリポジトリへのgit commit、リモートリポジトリへのgit pushをすることで、作業を進めました。
+
+- マイページ画面
+
+    マイページ編集画面において、自己紹介文やSNS(github、twitter、facebook)のURLを入力すると、マイページ画面にプロフィールが表示されます。SNSの情報を入力している場合、SNSのアイコンが表示されます。また、自身が投稿した記事数やその一覧、いいねした記事数やその一覧(直近3つまで)が表示されます。
+
+ 
+- いいね機能
+
+    投稿された記事に「いいね」をできる機能を実装しました。ajaxを用いた非同期通信で、実装しています。記事詳細ページにおいて、ハートマークを押すと「いいね」ができます。尚、各ユーザーは、
+    各記事に対して、一度しか「いいね」ができない様になっています。
+
+- コメント機能
+
+    記事詳細ページにおいて、各ユーザーがコメントを入力できる様にしました。コメントを投稿したユーザーのアイコンやコメント日時を、リアルタイムで表示できます。いいね機能と同様に、ajaxを用いた非同期通信で、実装しています。
+
+- ログイン/ログアウト機能の実装
+
+## 苦労した点
+- ページ間のデータのやり取り
+
+    チーム内で、ページ毎に役割分担をしていた為、ページを跨いで使うデータ(記事ID、ユーザーID等)のやり取りに苦労しました。各メンバーが各ページで、どの様にして、データを取得/保存しているのか、メンバー間で共有しながら、データのやり取りが発生する場合は、やり取りが発生するページの担当同士で、しっかり話し合いながら、作成しました。
+    
+- コンフリクト対策
+
+    コンフリクトが発生しないように、作業するファイルと作業終了を共有するように、各メンバーに声かけを行い、コンフリクトが発生しないように心掛けました。結果として、大きなコンフリクトは発生せず、無事にチーム開発を終えることができました。
+
+
+## 特に注力した点
+- 新しい技術を早くキャッチアップすること
+
+    初めて触る言語を、早く取得(デプロイする)することに心掛けかました。短い期間(10日間)で、LaravelのMVCモデルや文法を理解し、メンバー間で理解度の差が生じない様に、フォローしながら進めました。
+    
+- チームでの密接なコミニケーション
+    
+    成果物の仕様やDB構造の決定など、共通認識が必要な部分は、チーム全員で議論し決定しました。また、制作過程でも、チーム内での日次のto do確認や、わからないところの教え合いを行うことで、チーム開発に不備が発生しない様に、努めました。
+
+    
