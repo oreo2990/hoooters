@@ -1,0 +1,497 @@
+body{
+  background-color:rgb(247, 247, 247);
+}
+
+.none{
+  display: none;
+}
+
+
+.header{
+  width: 100vw;
+  height: 7vh;
+  background-color:rgb(113, 203, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container{
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left{
+  width: 150px;
+  display: block;
+}
+
+.header-left>img{
+  width: 100%;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.edit-btn{
+  width: 130px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  background-color: rgb(97, 171, 255);
+  color: #fff;
+  margin-right: 20px;
+}
+
+.edit-btn:hover{
+  background-color: rgb(87, 151, 224);
+}
+
+.edit-btn>.fa-edit{
+  font-size: 16px;
+  margin-right: 10px;
+  padding-bottom: 2px;
+}
+
+.edit-btn>p{
+  font-size: 12px;
+}
+
+.icon-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-wrapper:hover{
+  cursor: pointer;
+}
+
+.myicon{
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.myicon>img{
+  width: 100%;
+}
+
+.icon-wrapper>.fa-sort-down{
+  color: rgb(85, 150, 224);
+  padding-bottom: 3px;
+}
+
+.mypage-list{
+  position: absolute;
+  top: 40px;
+  right: 0;
+  text-align: center;
+  width: 120px;
+  background-color: #fff;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  z-index: 10;
+}
+
+#mypage-btn,#logout-btn{
+  display: block;
+  padding: 15px 0;
+  font-size: 12px;
+  color: rgb(105, 105, 105);
+}
+
+#mypage-btn{
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+#mypage-btn:hover,#logout-btn:hover{
+  cursor: pointer;
+  color: rgb(88, 88, 88);
+  background-color: rgb(241, 241, 241);
+}
+
+
+/* メインコンテンツはここから */
+main{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.left-content{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* .left-content.fix{
+  position: fixed;
+  top: 0;
+} */
+
+.searchform{
+  width: 90%;
+  height: 40px;
+  margin: 5px 0 20px;
+  position: relative;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  position: -webkit-sticky; /* Safariに対応する */
+  position: sticky; /* 要素を固定/解除する */
+  top: 10px;
+  left: 0;
+}
+
+.searchform>.fa-search{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: rgb(168, 168, 168);
+}
+
+.kensaku{
+  width: 100%;
+  height: 40px;
+  padding-left: 40px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.left-box{
+  width: 90%;
+  font-size: 13px;
+  padding: 0 0 0 10px;
+  position: -webkit-sticky; /* Safariに対応する */
+  position: sticky; /* 要素を固定/解除する */
+  top: 60px;
+  left: 0;
+}
+
+.left-title{
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+}
+
+.menu-list{
+  width: 100%;
+}
+
+.menu-item{
+  height: 40px;
+  padding-left: 17px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px 0 0 3px;
+  margin: 5px 0;
+  font-weight: bold;
+  color: rgb(168, 168, 168);
+}
+
+.menu-item:hover{
+  cursor: pointer;
+  background-color: rgb(228, 228, 228);
+}
+
+.menu-item.actmenu{
+  background-color:rgb(113, 203, 241);
+  color: #fff;
+}
+
+.menu-item.actmenu:hover{
+  cursor: pointer;
+  background-color:rgb(107, 191, 228);
+
+}
+
+.menu-item>.fas{
+  font-size: 18px;
+  padding-right: 8px;
+}
+
+.menu-item>p{
+  padding-top: 2px;
+}
+
+#gyo-btn{
+  position: relative;
+}
+
+.gyo-list-box{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  height: 230px;
+  width: 100%;
+  overflow: hidden;
+  background-color:rgb(247, 247, 247);
+}
+
+.gyo-list{
+  transform: translateY(-230px);
+  background-color:rgb(252, 252, 252);
+  padding: 10px 26px 10px 20px;
+  height: 230px;
+  transition: .3s;
+}
+
+.gyo-list.act{
+  transform: translateY(0px);
+}
+
+.gyo-item{
+  color: #979797;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  border-bottom: 1px dashed rgb(216, 216, 216);
+}
+
+.gyo-item:hover{
+  cursor: pointer;
+  color: #636363;
+}
+
+/* 右側のコンテンツはここから */
+
+/* 右側のコンテントの切替 */
+
+.right-content{
+  width: 75%;
+}
+
+.right-title{
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid rgb(247, 247, 247);
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 0 40px;
+  color: rgb(112, 112, 112);
+  font-weight: bold;
+}
+
+.right-title>.fas{
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+#right-theme{
+  padding-top: 4px;
+}
+
+
+.right-content{
+  width: 100%;
+}
+
+.tab-wrap {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+
+/* .tab-label {
+  color: #ffffff;
+  background: gainsboro;
+  padding: 3px 12px;
+  order: -1;
+  width:33%;
+
+}
+.tab-content {
+  width: 100%;
+  min-height:70vh;
+  display: none;
+  background-color: gainsboro;
+  padding-bottom: 5px;
+}
+.tab-switch:checked+.tab-label {
+  background: rgb(113, 203, 241);
+}
+.tab-switch:checked+.tab-label+.tab-content {
+  display: block;
+}
+.tab-switch {
+  display: none;
+} */
+
+
+/* 右側コンテンツの編集 */
+.feed{
+  width:100%;
+  height: 300px;
+  background-color: #fff;
+  position: relative;
+  border-bottom: 2px solid rgb(247, 247, 247);
+  display: flex;
+  padding: 20px 0 30px;
+}
+
+.feed-left{
+  width: 45%;
+  padding: 0 0 0 40px;
+}
+
+.kigyo-name{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.kigyo-name:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(53, 53, 53);
+}
+
+.jigyo{
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: rgb(78, 78, 78);
+}
+
+.gyoicon{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.gyoicon#gyoid1{
+  background-color: rgb(113, 147, 241);
+}
+
+.gyoicon#gyoid2{
+  background-color: rgb(126, 178, 255);
+}
+.gyoicon#gyoid3{
+  background-color: rgb(113, 205, 241);
+}
+.gyoicon#gyoid4{
+  background-color: rgb(113, 222, 241);
+
+}
+.gyoicon#gyoid5{
+  background-color: rgb(113, 241, 230);
+}
+.gyoicon#gyoid6{
+  background-color: rgb(189, 189, 189);
+}
+
+.kigyo-comme{
+  color: rgb(87, 87, 87);
+  height: 110px;
+  padding: 10px;
+  width: 100%;
+  letter-spacing: 1px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.jcomme{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  font-size: 14px;
+}
+
+.feed-right{
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.feed-pict{
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+/*
+.icon{
+  height: 1vh;
+  width:1vw;
+} */
+
+
+.feed-bottom{
+  position:absolute;
+  left: 35px;
+  bottom: 20px;
+  display: flex;
+}
+
+.icon-img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.float{
+  width: 100%;
+}
+
+
+.artuser{
+  line-height: 30px;
+  padding-top: 3px;
+  font-size: 13px;
+  color: rgb(153, 153, 153);
+}
+
+.error-wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.error-message{
+  margin-top: 50px;
+  color: rgb(131, 131, 131);
+}
+
+
+footer{
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: #cccccc;
+}

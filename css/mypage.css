@@ -1,0 +1,393 @@
+body{
+    background-color: rgb(247, 247, 247);
+    color: rgb(53, 53, 53);
+}
+
+.none{
+    display: none;
+  }
+
+/* 以下、header---------------------------- */
+.none{
+    display: none;
+  }
+
+.header{
+    width: 100vw;
+    height: 7vh;
+    background-color:rgb(113, 203, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-left{
+    width: 150px;
+    display: block;
+  }
+  .header-left>img{
+    width: 100%;
+  }
+  .header-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .edit-btn{
+    width: 130px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    background-color: rgb(97, 171, 255);
+    color: #fff;
+    margin-right: 20px;
+  }
+  .edit-btn:hover{
+    background-color: rgb(87, 151, 224);
+  }
+  .edit-btn>.fa-edit{
+    font-size: 16px;
+    margin-right: 10px;
+    padding-bottom: 2px;
+  }
+  .edit-btn>p{
+    font-size: 12px;
+  }
+  .icon-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .icon-wrapper:hover{
+    cursor: pointer;
+  }
+  .myicon{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    overflow: hidden;
+    margin-right: 5px;
+  }
+  .myicon>img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 100%;
+   
+  }
+  .icon-wrapper>.fa-sort-down{
+    color: rgb(85, 150, 224);
+    padding-bottom: 3px;
+  }
+  .mypage-list{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    text-align: center;
+    width: 120px;
+    background-color: #fff;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    z-index: 10;
+  }
+  #mypage-btn,#logout-btn{
+    display: block;
+    padding: 15px 0;
+    font-size: 12px;
+    color: rgb(105, 105, 105);
+  }
+  #mypage-btn{
+    border-bottom: 1px solid rgb(204, 204, 204);
+  }
+  #mypage-btn:hover,#logout-btn:hover{
+    cursor: pointer;
+    color: rgb(88, 88, 88);
+    background-color: rgb(241, 241, 241);
+  }
+
+/* 以上、header---------------------------- */
+
+
+/* 以下、main---------------------------- */
+#profile{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+
+
+/* 以下、leftprofile --------*/
+#leftprofilebox{
+    width: 360px;
+    height: 750px;
+    margin-right: 16px;
+}
+
+#leftprofile{
+    background: #FFFFFF;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#leftprofile1{
+    width: 200px;
+    height: 200px;
+    /* background-color: aqua; */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#leftprofile1>img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 100%;
+
+    /* object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%; */
+}
+
+#leftprofile #leftprofile2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#leftprofile #leftprofile3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+
+#leftprofile #leftprofile3 a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#leftprofile #leftprofile4{
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftprofile #leftprofile4 p{
+    width: 90%;
+    height: auto;
+    word-wrap:break-word;
+    line-height: 25px;
+    text-align: center;
+}
+
+
+#leftprofile #leftprofile5{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: chartreuse; */
+
+}
+
+#leftprofile #leftprofile5 .p5{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#leftprofile #leftprofile5 .p6{
+    font-size: 15px;
+}
+
+#leftprofile #leftprofile5 #leftprofile5_1{
+    /* background-color: aquamarine; */
+    width: 104px;
+    text-align: center;
+}
+
+#leftprofile #leftprofile5 #leftprofile5_2{
+    /* background-color: brown; */
+    width: 104px;
+    text-align: center;
+}
+
+#leftprofile6{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#leftprofile #leftprofile6 a{
+    display: block;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #777;
+    color: #fff;
+    border-color: #777;
+    font-weight: bold;
+    opacity: 0.8;
+    border-radius: 2px;
+}
+
+#leftprofile #leftprofile6 a:hover{
+  opacity: 1;
+}
+
+/* #leftprofile #leftprofile7{
+    text-align: center;
+}
+
+#leftprofile #leftprofile7 a{
+    font-size: 13px;
+    color: gray;
+    text-decoration: none;
+} */
+
+/* 以上、leftprofile --------*/
+
+
+/* 以下、rightprofile --------*/
+#rightprofile{
+  width: 700px;
+}
+
+
+#rightprofile #like{
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.article-title{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 20px;
+  border-bottom: 1px solid  rgb(247, 247, 247);
+}
+
+.article-title>p{
+  padding-top: 3px;
+}
+
+.article-title>span{
+  font-size: 20px;
+  color: #c5a800;
+  margin-right: 12px;
+}
+
+.art-list{
+  width: 100%;
+}
+
+#article{
+  background-color: #fff;
+}
+
+.art-item{
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid  rgb(247, 247, 247);
+  padding: 20px 30px;
+  background-color: #fff;
+}
+
+.art-item.myarts{
+  height: 70px;
+  padding: 10px 30px;
+}
+
+.art-title{
+  color:  rgb(53, 53, 53);
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.art-title:hover{
+  color:  rgb(37, 37, 37);
+}
+
+.art-title>span{
+  color:  rgb(87, 87, 87);
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.post-name{
+  width: 100%;
+  font-size:13px;
+  display: flex;
+  align-items: center;
+}
+
+.artinfo{
+  width: 100%;
+  font-size:13px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.poster-icon{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color:rgb(113, 203, 241);
+  margin-right: 7px;
+}
+
+.poster-icon>img{
+  width: 100%;
+}
+
+
+
+/* 以下、footer------------------------------------------------------- */
+footer{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #cccccc;
+  }
+  /* 以上、footer------------------------------------------------------- */
+
+
+
