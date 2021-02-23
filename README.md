@@ -14,7 +14,7 @@
 【公開ページ】
 http://tealimpala23.sakura.ne.jp/hoooters/public/welcome
 
-Id = niwa@niwa.jp　,　pass = aaaaaaaaでご確認ください。
+Id = niwa@niwa.jp　,　pass = aaaaaaaaでご確認ください(google chrome推奨)。
 
 ###### ①welcome画面
 ![](pic1.png "pic1")
